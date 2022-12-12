@@ -1,0 +1,195 @@
+.background {
+    background-color: wheat;
+}
+.main-background {
+    background-color: black;
+}
+.text-center {
+    color: aliceblue;
+}
+.copyright {
+    background-color: grey;
+}
+.number-color {
+    color: red;
+}
+.icon-color {
+    color: black;
+}
+
+
+@charset "UTF-8";
+
+.testimonial-slider-container {
+  background: rgb(218, 212, 204);
+  padding: 1rem 1rem;
+}
+
+.testimonial-slider-container .orbit-previous,
+.testimonial-slider-container .orbit-next {
+  color: #0a0a0a;
+}
+
+.testimonial-slider-container .orbit-previous:hover, .testimonial-slider-container .orbit-previous:active, .testimonial-slider-container .orbit-previous:focus,
+.testimonial-slider-container .orbit-next:hover,
+.testimonial-slider-container .orbit-next:active,
+.testimonial-slider-container .orbit-next:focus {
+  background-color: transparent;
+}
+
+.testimonial-slider-container .orbit-previous {
+  left: -1rem;
+}
+
+.testimonial-slider-container .orbit-next {
+  right: -1rem;
+}
+
+.testimonial-slider-container .testimonial-slide {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonial-slider-container .testimonial-slide-content {
+  padding: 1rem 1.5rem;
+}
+
+@media screen and (min-width: 40em) {
+  .testimonial-slider-container .testimonial-slide-content {
+    padding: 1rem 4rem;
+  }
+}
+
+.testimonial-slider-container .profile-pic {
+  max-width: 225px;
+}
+
+.testimonial-slider-container .testimonial-slide-text {
+  padding-left: 3rem;
+}
+
+.testimonial-slider-container .testimonial-slide-quotation {
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.testimonial-slider-container .testimonial-slide-quotation::before {
+  content: "“";
+  font-size: 6rem;
+  color: #131111;
+  position: absolute;
+  top: -3rem;
+  left: -3rem;
+}
+
+.testimonial-slider-container .testimonial-slide-author-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .testimonial-slider-container .testimonial-slide-author-container .testimonial-slide-author-info {
+    margin-left: 1rem;
+  }
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
